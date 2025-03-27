@@ -1,6 +1,12 @@
 function filtrerProduitsEnPromo(produits) {
-	let tableau = []
-    
+	let tableau = [];
+	for (let i = 0; i < produits.length; i++) {
+		if ((produits[i].promo == true)) {
+			let promotion = produits[i];
+			tableau.push(produits[i]);
+		}
+	}
+	return tableau;
 }
 
 console.log(
