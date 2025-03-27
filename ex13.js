@@ -1,5 +1,10 @@
     function genererDescriptions(personnes) {
- 
+        let tableau = []
+        tableau.push(personnes.nom)
+        tableau.push(personnes.age)
+
+        return tableau
+
     }
 
     console.log(

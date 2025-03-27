@@ -1,9 +1,11 @@
 function filtrerPairs(tab) {
+    let tableau = []
 	for (let i = 0; i < tab.length; i++) {
         if(tab[i] % 2 == 0) {
-            console.log(tab[i]);
+            tableau.push(tab[i])
         }
     }
+    return tableau
 }
 
 console.log(filtrerPairs([1, 2, 3, 4, 5, 6])); // Résultat attendu : [2, 4, 6]

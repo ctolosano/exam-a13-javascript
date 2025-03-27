@@ -1,9 +1,12 @@
 function filtrerLongsMots(mots) {
-	for (let i = 0; i < mots[i].length; i++) {
-        if (mots[i].length > 5) {
-            console.log(mots[i]);
+    let tableau = []
+	for (let i = 0; i < mots.length; i++) {
+        const longueur = mots[i].length;
+        if (longueur > 5) {
+            tableau.push(mots[i]);
         }
     }
+    return tableau
 }
 
 console.log(filtrerLongsMots(["chat", "éléphant", "chien", "lion"])); // Résultat attendu : ["éléphant"]
