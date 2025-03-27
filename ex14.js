@@ -1,10 +1,11 @@
 function filtrerAdultes(utilisateurs) {
-    const utilisateur = [
-        utilisateurs.nom, utilisateurs.age
-    ]
-    if (utilisateurs.age >= 18 ) {
-        console.log(Object.values(utilisateur))
-    } 
+	let tableau = [];
+	for (let i = 0; i < utilisateurs.length; i++)
+		if (utilisateurs[i].age >= 18) {
+			let resultat = utilisateurs[i];
+			tableau.push(utilisateurs[i]);
+		}
+	return tableau;
 }
 
 console.log(

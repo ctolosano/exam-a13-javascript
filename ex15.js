@@ -1,5 +1,6 @@
 function filtrerProduitsEnPromo(produits) {
-	// Écrire le code ici
+	let tableau = []
+    
 }
 
 console.log(
